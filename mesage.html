@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body onload="GetOutput()">
+
+ <label for="TextInput">Text:</label>
+  <input type="text" id="TextInput" name="TextInput"><br><br>
+
+<button type="button" onclick="Post">Post</button>
+
+<p id="output"></p>
+<p id="JavaScriptEnabled"></p>
+
+<script>
+
+document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
+
+function readTextFile(file){
+
+    var rawFile = new XMLHttpRequest();
+
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                alert(allText);
+				document.getElementById("output").innerHTML = allText;	
+            }
+        }
+    }
+    rawFile.send(null);
+}
+
+function GetOutput(){
+	
+	var inputfile = "https://payesoft.github.io/payesoft.com/File.txt";
+	var OutputText //= readFile(inputfile);
+
+	document.getElementById("TextInput").innerHTML= readTextFile(inputfile);
+
+	//document.getElementById('output').textContent=OutputText;
+	//var  Selected = inputfile;
+
+
+	//let reader = new FileReader();
+	//reader.addEventListener("loadend", () => { let data = reader.result; });
+	//OutputText = reader.readAsText(inputfile);
+	//document.getElementById("TextInput").innerHTML	= OutputText;
+}
+
+function Post(){
+	
+	var filename;
+	var data;
+	var type = "plain/text";
+
+	data = document.getElementById("TextInput").innerHTML;
+	filename = "https://payesoft.github.io/payesoft.com/File.txt";
+
+	download(data, filename, type);
+
+}
+
+// Function to download data to a file
+function download(data, filename, type) {
+		
+    var file = new Blob([data], {type: type});
+	
+    if (window.navigator.msSaveOrOpenBlob) // IE10+
+        window.navigator.msSaveOrOpenBlob(file, filename);
+    else { // Others
+        var a = document.createElement("a"),
+                url = URL.createObjectURL(file);
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function() {
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);  
+        }, 0); 
+    }
+}
+
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+ 
+</body>
+</html>
+

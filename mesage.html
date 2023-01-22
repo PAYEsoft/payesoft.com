@@ -14,6 +14,9 @@
 
 document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
 
+var InputFile;
+InputFile= "https://drive.google.com/file/d/15-dO1jFFAugm-YSaoInQ8UtI8a9hmMVt/view?usp=share_link";
+
 function readTextFile(file){
 
     var rawFile = new XMLHttpRequest();
@@ -36,7 +39,6 @@ function readTextFile(file){
 
 function GetOutput(){
 	
-	var inputfile = "https://payesoft.github.io/payesoft.com/File.txt";
 	var OutputText //= readFile(inputfile);
 
 	document.getElementById("TextInput").innerHTML= readTextFile(inputfile);
@@ -58,7 +60,6 @@ function Post(){
 	var type = "plain/text";
 
 	data = document.getElementById("TextInput").innerHTML;
-	filename = "https://payesoft.github.io/payesoft.com/File.txt";
 
 	download(data, filename, type);
 

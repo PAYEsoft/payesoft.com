@@ -3,7 +3,7 @@
 <body onload="GetOutput()">
 
 	<p>
-		Updated 23/01/23 07:47
+		Updated 23/01/23 07:50
 	</p>
 	
  <label for="TextInput">Text:</label>
@@ -21,7 +21,7 @@ document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
 
 function readTextFile(file){
 
-    var InputFile = "https://drive.google.com/file/d/1VfQgmSlRFRRUb1q6hbH7DHc9BU2yMGZl/view?usp=share_link";
+    
 	
     var rawFile = new XMLHttpRequest();
 
@@ -43,7 +43,7 @@ function readTextFile(file){
 
 function GetOutput(){
 
-	
+	var InputFile = "https://drive.google.com/file/d/1VfQgmSlRFRRUb1q6hbH7DHc9BU2yMGZl/view?usp=share_link";
 	var OutputText //= readFile(inputfile);
 
 	document.getElementById("TextInput").innerHTML= readTextFile(inputfile);

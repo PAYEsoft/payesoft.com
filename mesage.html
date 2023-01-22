@@ -21,6 +21,8 @@ document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
 
 function readTextFile(file){
 
+    var InputFile = "https://drive.google.com/file/d/1VfQgmSlRFRRUb1q6hbH7DHc9BU2yMGZl/view?usp=share_link";
+	
     var rawFile = new XMLHttpRequest();
 
     rawFile.open("GET", file, false);
@@ -41,7 +43,7 @@ function readTextFile(file){
 
 function GetOutput(){
 
-	var InputFile= "https://drive.google.com/file/d/1VfQgmSlRFRRUb1q6hbH7DHc9BU2yMGZl/view?usp=share_link";
+	
 	var OutputText //= readFile(inputfile);
 
 	document.getElementById("TextInput").innerHTML= readTextFile(inputfile);

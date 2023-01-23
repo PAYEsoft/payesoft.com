@@ -7,7 +7,7 @@
 <body onload="GetOutput()">
 
 	<p>
-		Updated 23/01/23 08:39
+		Updated 23/01/23 08:50
 	</p>
 	
  <label for="TextInput">Text:</label>
@@ -25,22 +25,26 @@ document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
 
 function readTextFile(file){    
 	
-    var rawFile = new XMLHttpRequest();
+    $.getJSON( "/data.json", function( data ) {
+    console.log(data);
+    $("#text").html(data["text"]);
+	
+    //var rawFile = new XMLHttpRequest();
 
-    rawFile.open("GET", file, false);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                alert(allText);
-				document.getElementById("output").innerHTML = allText;	
-            }
+    //rawFile.open("GET", file, false);
+    //rawFile.onreadystatechange = function ()
+    //{
+    //   if(rawFile.readyState === 4)
+    //    {
+    //        if(rawFile.status === 200 || rawFile.status == 0)
+    //        {
+    //            var allText = rawFile.responseText;
+    //            alert(allText);
+    //				document.getElementById("output").innerHTML = allText;	
+    //        }
         }
-    }
-    rawFile.send(null);
+    //}
+    //rawFile.send(null);
 }
 
 function GetOutput(){

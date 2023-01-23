@@ -7,7 +7,7 @@
 <body onload="GetOutput()">
 
 	<p>
-		Updated 23/01/23 08:31
+		Updated 23/01/23 08:39
 	</p>
 	
  <label for="TextInput">Text:</label>
@@ -23,9 +23,7 @@
 document.getElementById("JavaScriptEnabled").innerHTML = "Hello JavaScript!";
 
 
-function readTextFile(file){
-
-    
+function readTextFile(file){    
 	
     var rawFile = new XMLHttpRequest();
 
@@ -48,7 +46,7 @@ function readTextFile(file){
 function GetOutput(){
 
 	var inputfile;
-	inputfile = "https://drive.google.com/file/d/1VfQgmSlRFRRUb1q6hbH7DHc9BU2yMGZl/view?usp=share_link";
+	inputfile = "https://payesoft.github.io/payesoft.com/chat.txt";
 	var OutputText //= readFile(inputfile);
 
 	document.getElementById("TextInput").innerHTML= readTextFile(inputfile);

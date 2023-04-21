@@ -1,353 +1,57 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta property="og:title" content="I Have Questions" />
-		<meta property="og:type" content="Questions" />
-		<meta property="og:url" content="https://ihavequestions.somee.com/" />
-		<meta property="og:image" content="https://ihavequestions.somee.com/logo.jpg" />
-		<meta name="description" content="Have a burning question?">
-		<meta name="keywords" content="say, questions, vidios">
+		<link rel="icon" type="image/x-icon" href="https://payesoft.github.io/payesoft.com/favicon.ico"/>
+		<meta name="description" content="Temporary home of payesoft.com">
+		<meta name="keywords" content="PAYEsoft.com">
 		<meta name="author" content="Peter Gransden">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>I Have Questions</title>
-	
-	    <style>
-			div {
-				position: fixed;
-				top: 50%;
-				left: 50%;
-				/* bring your own prefixes */
-				transform: translate(-50%, -50%);
-			}
-			.closeButton {
-				position: relative;
-				<!-top: 50%;-->
-				left: 50%;
-				/* bring your own prefixes */
-				transform: translate(-50%, -50%);
-			}
-		</style>
-	
-	<script>
-		//document.getElementById('oppinion').style.display = 'none';
-		//document.getElementById('close').style.display = 'none';
-		//console.log('Init');
-	
-		function myOppinion(lIndex,bShow) {
-			var elementOppinion = document.getElementById('oppinion');
-			var elementClose = document.getElementById('close');
-			var tmpTop;
-			if (bShow == 0) {
-				elementOppinion.style.display = 'none';
-				elementClose.style.display = 'none';
-			} else if (bShow == 1) {
-				elementOppinion.style.display = 'block';
-				elementClose.style.display = 'block';
-				//tmpTop = getOffset(elementClose);
-				//elementClose.style.top = tmpTop;
-			}
-			// Storys
-			if (lIndex == '0') {
-				elementOppinion.value = 'Blank';// Blank
-			} else if (lIndex == '1') {
-				elementOppinion.value = "Free energy was the tough one I was thinking about free or cheap earlier today. There’s no such thing as free energy free energy comes at a cost of an initial investment into generators, power storage, solar, wind, nuclear or even cold fusion. We could get it too the point that energy is so abundant, that it’s really cheap and that should be the global worry. The problem is that we have lots of people in the energy industry that are corrupt and want to hold their power because their power means money and money means more power. That being said, it’s going to be difficult to create enough energy that it will become cheap, if anything I see the energy sector becoming more and more expensive, and until the breaking-point, when they’ll back off and realize that this is the point-of-no-return. There are a few things that would help with free energy or cheap energy nuclear power still comes at a cost of uranium less we can come up with some other source. Nuclear fusion, that would be ideal if we could get water to give us energy the world is abundant in water. Most of the planet is covered in solar panels, if we can get solar to be efficient that would be great. Generators if we can get our generators to be super efficient and low cost. Generating energy is an option that would also be great, it Would be nice to set the young people on a journey of cheap energy. I believe global warming is both men maid and think it is caused naturally let’s talk about the man-made cause of global warming, and what are the effects of C,O,2. What are the numbers behind the problem and do we know. I’m not sure that we know what is the direct correlation between C,O,2 and the effects of global warming. If C,O,2 is really the problem there’s a thing called graphene we can pull C,O,2 out of the air and make something called graphene, that could solve a problem with C,O,2. Our governments are not really for solving the problem of C,O,2 there after power and money. These are the things that control our government and corporations. Control the desire of men. I personally feel that we should be cleaning up our oceans of plastics. We should be a society of recyclers and be recycling all of our plastics all of our glass and maybe our paper, paper biodegrades fairly quickly so if we could use paper for fertilizer that would be a good idea. Recycling for glass on-the-other-hand, most of our products should come in glass, plastic is so bad for us as far as our health is concerned, anything we drink out of that's plastic should probably be glass instead. We already recycle most of our metals which is great.";// Story 1
-			} else if (lIndex == '2') {
-				elementOppinion.value = "Children to Focus?";
-			} else if (lIndex == '3') {
-				elementOppinion.value = "Child labour?";
-			} else if (lIndex == '4') {
-				elementOppinion.value = "Younger Workers?";
-			} else if (lIndex == '5') {
-				elementOppinion.value = "Voting Age?";
-			} else if (lIndex == '6') {
-				elementOppinion.value = "Avoid in Marriage?";
-			} else if (lIndex == '7') {
-				elementOppinion.value = "Good Practices in Marriage?";
-			} else if (lIndex == '8') {
-				elementOppinion.value = "Man's Roll v Woman's Roll in Marriage?";
-			} else if (lIndex == '9') {
-				elementOppinion.value = "Why Get Marred?";
-			} else if (lIndex == '10') {
-				elementOppinion.value = "Purpose of marriage?";
-			}
-			console.log('myOppinion');
-			
-			//function getOffset(el) {
-			//	const rect = el.getBoundingClientRect();
-			//	return rect.top + window.scrollY 
-				//{
-					//left: rect.left + window.scrollX,
-					//top: rect.top + window.scrollY
-				//};
-			//	console.log('getOffset');
-			//}
-		} 
-	
-	</script>
-	
+		<meta property="og:image" content="https://payesoft.github.io/payesoft.com/logo.jpg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		  <title>The Office</title>
 	</head>
-	<body>
-		<img src="logo.jpg" alt="Logo" style="width:100px;height:100px;">
-		<p>
-			<h1>
-				I Have Questions
-			</h1>
-			<br />
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/aNDe8QTdedE" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<br />
-			<hr />
-			
-			<h1>
-				Questions
-			</h1>
-			<!-- Free enage cased global warming -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/lxpLUvBc2Dk" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button1" onclick="myOppinion(1,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Our Cildren To Focus -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/x_hS7EUOMc8" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button2" onclick="myOppinion(2,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Chiled Labor-->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/aHf8RMQmeAU" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button3" onclick="myOppinion(3,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<!-- Younger Workers -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/Ru0QPiSzyxc" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button4" onclick="myOppinion(4,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Voting Age -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/z6OZLeAPnkI" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button5" onclick="myOppinion(5,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Avoid in marrege -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/1ptj3lM3WWc" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button6" onclick="myOppinion(6,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Good practis in marrage -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/45RkLc8YEoU" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button7" onclick="myOppinion(7,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Mans Roll v Womans Roll in Marriage? -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/_9CybmdatJ4" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button8" onclick="myOppinion(8,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Why Get Marred? -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/A_MLQcVtYIY" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button9" onclick="myOppinion(9,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<!-- Purpose of marriage? -->
-			<iframe 
-				width="560" 
-				height="315" 
-				src="https://www.youtube.com/embed/i8MRr1zIFqE" 
-				title="YouTube video player" 
-				frameborder="0" 
-					allow="accelerometer; 
-					autoplay; 
-					clipboard-write; 
-					encrypted-media; 
-					gyroscope; 
-					picture-in-picture; 
-					web-share" allowfullscreen>
-			</iframe>
-			<br />
-			<button type="button" id="button10" onclick="myOppinion(10,1);">My oppinion.</button>
-			<button type="button" href="mailt: ihavequestion@ihavequestions.somee.com">your oppinion.</button>
-			<br />
-			<br />
-			<div>
+<body style="font-size: X-large;">
+<span style="color: SteelBlue; font-weight: bold; font-size: 2em">
+PAYE
+</span>
+<span style="color: dark-gray; font-weight: bold; font-size: 2em">
+soft<br />
+</span>
+<div style="font-size: large;">
+the art of software
+</div>
+	<p>
+		The 2022 update was a bit too challenging for me with all the changes,
+		and lack of UAT testers, and lack of web host (where I put pages) 
+		so please except my apologies, and this 2023 update instead.
+		<br />
+		I still have payesoft.com but no host. 
+		<br />
+		<div>
 				<h1>
-				<b>
-					<button type="button" 
-						style="
-							display: none;
-							margin-left: auto; 
-							margin-right: 0;
-							margin-bottom: 0;
-							color: red;" 
-						id="close" 
-						onclick="myOppinion(0,0);"
-						>
-							X
-					</button>
-					</b>
+				Dowlod link<br />
+				<a href="https://payesoft.github.io/payesoft.com/Setup.Taxcalc.2021.exe">Timesaver:Calc for Tax 2023 30 day trail</a>
 				</h1>
-					<textarea 
-						style="
-							display: none;
-							resize: both;
-							margin-top: 0;"
-						id="oppinion" 
-						name="oppinion" 
-						rows="10" 
-						cols="50"
-						>
-							...
-					</textarea>
-			</div>
-			<hr />
-			<h2>
-				<a href = "mailt: ihavequestion@ihavequestions.somee.com">
-					ihavequestion@ihavequestions.somee.com
-				</a>
-			</h2>
-		</p>
-	</body>
+		</div>
+		<img src="https://payesoft.github.io/payesoft.com/cft.png" width="100%" alt="Calc for Tax 2023">
+		<br />
+		<br />
+		For those who paid for 2022/2023 you will get 2023/2024 free, 
+		for the rest, you must pay £35.25 per user license, forget the 2022/2023 invoice, 
+		this won’t happen again.
+		<br />
+		We have not change the pries.		
+		<br />
+		<br />
+		I have been busy working on a new TAXcalc 2023 64bit, 
+		I hope you like it as much as I do. 
+		Things should be back to normal soon.
+	</p>
+	<br />	
+		<img src="https://payesoft.github.io/payesoft.com/taxcalc.png" width="100%" alt="TaxCalc 2023">		
+	<br />
+	<br />
+		Email: <a href="mailto:admin@payesoft.com">admin@PAYEsoft.com</a><br />
+	<br />
+</body>
 </html>
